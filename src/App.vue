@@ -2,16 +2,19 @@
   <img alt="Vue logo" src="./assets/logo.png">
   <!--<HelloWorld msg="Bienvenido to Your Vue.js App"/>-->
   <Contador/>
+  <Calculadora/>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import Contador from './components/Contador.vue'
+import Calculadora from './components/Calculadora.vue'
 
 export default {
   name: 'App',
   components: {
-    Contador
+    Contador,
+    Calculadora
   }
 }
 </script>
