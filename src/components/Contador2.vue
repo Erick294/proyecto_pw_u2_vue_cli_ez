@@ -14,8 +14,19 @@
 
 <script>
 export default {
-    name: "Contador",
-    props:['titulo', 'inicio'],
+    name: "Contador2",
+    props:{
+        titulo: String,
+        inicio: {
+            type: Number,
+            required: false, 
+            default: 25,
+            validator(value){
+                //validacion que retorne un true o false
+                return value > 0
+            }
+        }
+    },
     data(){
         return{
             numero: this.inicio
